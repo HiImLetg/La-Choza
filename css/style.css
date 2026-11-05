@@ -135,3 +135,19 @@ body {
 .schedule-arrow {
   color: #8B5A2B;
 }
+@media (max-width: 575.98px) {
+  .hero {
+    min-height: 520px;
+    background-position: 80% center;   /* encuadra el plato (a la derecha) */
+    background-image:
+      linear-gradient(180deg, rgba(24, 14, 6, .35) 0%, rgba(24, 14, 6, .85) 100%),
+      url("../img/Homemade-food.png");
+  }
+}
+.navbar-toggler {
+  color: #8B5A2B;   /* el SVG usa "currentColor", o sea este color */
+}
+.navbar-brand img {
+  height: 40px;
+  width: auto;     /* se calcula solo: ~155px */
+}

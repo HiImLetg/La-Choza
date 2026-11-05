@@ -1,13 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La Choza</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
 </head>
 <body>
-    <h1>Welcome to La Choza</h1>
-    
+
+    <nav class="navbar sm:navbar-expand ">
+  <div class="container-fluid">
+
+    <a class="navbar-brand" href="#">
+      <img src="img/La-Choza-logo.png" alt="Logo" width="200" height="40" class="d-inline-block align-text-top">
+    </a>
+    <button class="btn-icon navbar-toggler" type="button" data-bs-toggle="drawer" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon" aria-hidden="true"></span>
+    </button>
+    <dialog class="drawer drawer-end" tabindex="-1" id="navbarNav" aria-labelledby="navbarNavLabel">
+      
+        <div class="drawer-header">
+            <h5 class="drawer-title" id="navbarNavLabel">Menu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Close"></button>
+        </div>
+      <div class="drawer-body">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Menú</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" >Contactanos</a>
+          </li>
+        </ul>
+      </div>
+    </dialog>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="container">
+    <div class="hero-content">
+        <p class="hero-eyebrow">Hecho en casa, con cariño</p>
+        <h1 class="hero-title">La Choza</h1>
+        <p class="hero-subtitle">El sabor de casa, siempre a tu mesa.</p>
+        <p class="hero-text">
+            Comida de la que se disfruta sin afán. Almuerzos entre semana
+            y tus favoritos a la carta el fin de semana.
+        </p>
+        <div class="hero-actions">
+            <a href="#menu" class="btn-gold">Ver menú</a>
+            <a href="https://wa.me/593XXXXXXXXX" class="btn-outline">Escríbenos por WhatsApp</a>
+        </div>
+    </div>
+  </div>
+</section>
+
+<section class="schedule" aria-label="Horarios">
+  <div class="container">
+    <div class="schedule-grid">
+
+      <a href="#menu" class="schedule-card">
+        <span class="schedule-icon schedule-icon--gold">
+          <i class="bi bi-brightness-high" aria-hidden="true"></i>
+        </span>
+        <span class="schedule-body">
+          <small>Lunes a viernes</small>
+          <strong>Almuerzos</strong>
+        </span>
+        <i class="bi bi-arrow-up-right schedule-arrow" aria-hidden="true"></i>
+      </a>
+
+      <a href="#menu" class="schedule-card">
+        <span class="schedule-icon schedule-icon--green">
+          <i class="bi bi-egg-fried" aria-hidden="true"></i>
+        </span>
+        <span class="schedule-body">
+          <small>Sábado y domingo</small>
+          <strong>A la carta</strong>
+        </span>
+        <i class="bi bi-arrow-up-right schedule-arrow" aria-hidden="true"></i>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+
+<script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL" crossorigin="anonymous"></script>
 </body>
 </html>

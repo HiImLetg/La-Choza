@@ -1,0 +1,137 @@
+body {
+  background-color: #FBF5EA;
+}
+
+.navbar {
+  background-color: #FBF5EA;      /* fondo del nav */
+}
+
+.navbar .nav-link {
+  color: #2B2B2B;                 /* letras del menú */
+  font-weight: 500;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: #8B5A2B;                      /* hover y "Inicio" activo */
+  text-decoration: underline;
+  text-decoration-color: #8B5A2B;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 8px;          /* distancia entre texto y línea */
+}
+
+.hero img {
+  display: block;   /* quita el huequito de abajo */
+  width: 100%;      /* llena todo el ancho, sin depender del tamaño del archivo */
+  height: auto;
+}
+:root {
+  scrollbar-gutter: auto;
+}
+.hero {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;      /* centra el texto en vertical */
+  color: #fff;
+  background:
+    linear-gradient(90deg, rgba(24,14,6,.88) 0%, rgba(24,14,6,.55) 45%, rgba(24,14,6,0) 100%),
+    url("../img/Homemade-food.png") center / cover no-repeat;
+}
+
+.hero-content { max-width: 560px; }
+
+.hero-eyebrow {
+  font-size: .75rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: #E8A93B;
+}
+
+.hero-title {
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 500;
+  font-size: clamp(3rem, 8vw, 5.5rem);   /* crece con la pantalla, entre 3 y 5.5rem */
+  line-height: 1;
+}
+
+.hero-subtitle {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(1.3rem, 3vw, 2rem);
+}
+
+.hero-text { color: rgba(255, 255, 255, .85); max-width: 400px; }
+
+.hero-actions { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 1.5rem; }
+
+.btn-gold, .btn-outline {
+  padding: .7rem 1.4rem;
+  border-radius: 12px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.btn-gold    { background: #E8A93B; color: #2B2B2B; }
+.btn-outline { border: 1px solid rgba(255,255,255,.7); color: #fff; }
+.btn-outline:hover { background: rgba(255,255,255,.14); }
+/* ===== Horarios ===== */
+.schedule {
+  padding-block: 2rem 3rem;
+}
+
+.schedule-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.schedule-card {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  padding: 1.3rem 1.5rem;
+  background-color: #FFFCF6;
+  border: 1px solid rgba(139, 90, 43, .15);
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(139, 90, 43, .08);
+  color: #2B2B2B;
+  text-decoration: none;
+  transition: box-shadow .2s ease;
+}
+
+.schedule-card:hover {
+  box-shadow: 0 10px 28px rgba(139, 90, 43, .18);
+}
+
+.schedule-icon {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  font-size: 1.4rem;
+}
+
+.schedule-icon--gold  { background-color: #F8EBD2; color: #8B5A2B; }
+.schedule-icon--green { background-color: #E6EDDC; color: #5E7F3B; }
+
+.schedule-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.schedule-body small {
+  font-size: .75rem;
+  color: #7A6A58;
+}
+
+.schedule-body strong {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.schedule-arrow {
+  color: #8B5A2B;
+}
